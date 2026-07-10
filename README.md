@@ -1,13 +1,31 @@
-# Website
+# Glasshouse Design static site
 
-Glasshouse Design Website
+A fast, responsive static rebuild of [glasshouse.design](https://glasshouse.design/) — WordPress development, support, SEO and graphic design for small businesses in and around Chippenham, Wiltshire.
 
-This folder contains a simple static website scaffold with HTML, CSS, and JavaScript.
+Built from the real brand: the sunset-orange logo mark, service copy and client work from the live site, with SEO essentials (meta tags, Open Graph, JSON-LD local business schema, sitemap, robots.txt) that the original WordPress/Elementor site didn't have.
+
+## Files
+
+- [index.html](index.html) — homepage
+- [wordpress-development.html](wordpress-development.html)
+- [wordpress-support.html](wordpress-support.html)
+- [graphic-design.html](graphic-design.html)
+- [seo.html](seo.html)
+- [web-design-melksham.html](web-design-melksham.html), [web-design-swindon.html](web-design-swindon.html), [web-design-bath.html](web-design-bath.html), [web-design-trowbridge.html](web-design-trowbridge.html), [web-design-corsham.html](web-design-corsham.html) — local landing pages; duplicate this pattern for any further towns
+- [contact.html](contact.html)
+- [styles.css](styles.css)
+- [script.js](script.js)
+- [assets/img/](assets/img/) — logo mark, favicons, client logos
+- [robots.txt](robots.txt), [sitemap.xml](sitemap.xml)
 
 ## Run locally
 
-Open [index.html](index.html) in your browser, or serve the folder with a simple local server.
+Open [index.html](index.html) in a browser, or serve the folder with a simple local server such as:
 
-## Git
+```bash
+python3 -m http.server 8000
+```
 
-This project is ready to be pushed to GitHub.
+## Deploying
+
+This is a plain static site — upload the folder as-is to any static host (Netlify, Vercel, GitHub Pages, or the existing hosting account) with no build step required. Update the `og:image`/`canonical` URLs in each page's `<head>` if the site moves to a different domain.
