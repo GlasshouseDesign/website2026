@@ -19,6 +19,7 @@ Built from the real brand: the sunset-orange logo mark, service copy and client 
 - [script.js](script.js)
 - [assets/img/](assets/img/) - logo mark, favicons, client logos
 - [robots.txt](robots.txt), [sitemap.xml](sitemap.xml)
+- [.htaccess](.htaccess) - 301 redirects from the old WordPress URLs (`/contact/`, `/graphic-design/`, etc.) to the new `.html` pages. Requires Apache (works on Cloudways); add more `RewriteRule` lines here if further old URLs turn up.
 
 ## Run locally
 

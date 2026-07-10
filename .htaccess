@@ -1,0 +1,8 @@
+# Redirects from the old WordPress URLs to the new static pages.
+# 301 = permanent redirect, so search engines transfer ranking/link equity to the new URL.
+RewriteEngine On
+
+RewriteRule ^contact/?$ /contact.html [R=301,L]
+RewriteRule ^graphic-design/?$ /graphic-design.html [R=301,L]
+RewriteRule ^wordpress-support/?$ /wordpress-support.html [R=301,L]
+RewriteRule ^wordpress-development/?$ /wordpress-development.html [R=301,L]
