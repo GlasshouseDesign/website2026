@@ -60,16 +60,23 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", revealPill, { passive: true });
   }
 
-  const contactForm = document.getElementById("contact-form");
-  if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const name = contactForm.name.value.trim();
-      const email = contactForm.email.value.trim();
-      const message = contactForm.message.value.trim();
-      const subject = encodeURIComponent(`Website enquiry from ${name || "your website"}`);
-      const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
-      window.location.href = `mailto:hello@glasshouse.design?subject=${subject}&body=${body}`;
+  const faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach((item) => {
+    const question = item.querySelector(".faq-question");
+    const answer = item.querySelector(".faq-answer");
+
+    question.addEventListener("click", () => {
+      const isOpen = question.getAttribute("aria-expanded") === "true";
+
+      faqItems.forEach((other) => {
+        if (other !== item) {
+          other.querySelector(".faq-question").setAttribute("aria-expanded", "false");
+          other.querySelector(".faq-answer").style.maxHeight = "";
+        }
+      });
+
+      question.setAttribute("aria-expanded", String(!isOpen));
+      answer.style.maxHeight = isOpen ? "" : `${answer.scrollHeight}px`;
     });
-  }
+  });
 });
