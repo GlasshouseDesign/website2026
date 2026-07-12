@@ -11,8 +11,10 @@ Built from the real brand: the sunset-orange logo mark, service copy and client 
 - [wordpress-support.html](wordpress-support.html)
 - [graphic-design.html](graphic-design.html)
 - [seo.html](seo.html)
-- [affordable-websites-from-49-per-month.html](affordable-websites-from-49-per-month.html) - Essentials/Growth pricing plans for the £49 offer
-- [web-design-melksham.html](web-design-melksham.html), [web-design-swindon.html](web-design-swindon.html), [web-design-bath.html](web-design-bath.html), [web-design-trowbridge.html](web-design-trowbridge.html), [web-design-corsham.html](web-design-corsham.html) - local landing pages; duplicate this pattern for any further towns
+- [affordable-websites-from-49-per-month.html](affordable-websites-from-49-per-month.html) - Essentials/Growth/Custom pricing plans for the £49 offer
+- [cheap-website-design.html](cheap-website-design.html), [website-design-for-startups.html](website-design-for-startups.html) - audience-angle landing pages pushing the £49/month offer; duplicate this pattern for further angles
+- [web-design-melksham.html](web-design-melksham.html), [web-design-swindon.html](web-design-swindon.html), [web-design-bath.html](web-design-bath.html), [web-design-trowbridge.html](web-design-trowbridge.html), [web-design-corsham.html](web-design-corsham.html) - local landing pages, linked from the site footer; duplicate this pattern for any further towns
+- [cheap-website-design-chippenham.html](cheap-website-design-chippenham.html), `-corsham`, `-swindon`, `-bath`, `-trowbridge`, `-melksham` - location + "cheap website" long-tail landing pages. Intentionally **not** linked from any nav/footer (kept out of the visible site to avoid diluting the main town pages), but indexable (`index, follow`) and listed in `sitemap.xml` so they can still rank in organic search for queries like "cheap website design in Corsham".
 - [contact.html](contact.html)
 - [terms-and-conditions.html](terms-and-conditions.html) - plain-English terms covering the monthly plans; have a solicitor review before treating as a binding agreement
 - [styles.css](styles.css)
